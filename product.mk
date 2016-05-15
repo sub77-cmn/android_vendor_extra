@@ -27,9 +27,11 @@ PRODUCT_PACKAGES += \
 		Matlog
 
 # Add Superuser
-# NOTE: Superuser is being named UPDATE-SuperSU.zip to keep build script happy
+# HACK: fix Superuser to copy these files properly
 PRODUCT_COPY_FILES += \
-		vendor/extra/prebuilt/common/Superuser.zip:system/addon.d/UPDATE-SuperSU.zip
+		packages/apps/Superuser/init.superuser.rc:root/init.superuser.rc
+LOCAL_POST_INSTALL_CMD += \
+		ln -sf /sbin/xbin $(TARGET_OUT)/xbin/su
 
 #SUPERUSER_EMBEDDED := true
 
