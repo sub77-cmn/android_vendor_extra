@@ -36,13 +36,16 @@ PRODUCT_COPY_FILES := $(filter-out $(LAYERS_MANAGER),$(PRODUCT_COPY_FILES))
 
 # Add wanted packages
 PRODUCT_PACKAGES += \
+		LatinIME \
 		FDroid \
 		Matlog \
 		SlimLauncher \
 		Snap \
 		LayersManager \
 		LockClock \
-		htop
+		KernelAdiutor \
+		htop \
+		Busybox
 
 ########################################
 ############# Settings #################
