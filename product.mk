@@ -47,6 +47,11 @@ PRODUCT_PACKAGES += \
 		htop \
 		Busybox
 
+# Add OnlineNandroid
+# NOTE: OnlineNandroid is being named UPDATE-SuperSU.zip to keep build script happy without modifying it
+PRODUCT_COPY_FILES += \
+		vendor/extra/prebuilt/common/onandroidv9.52.zip:system/addon.d/UPDATE-SuperSU.zip
+
 ########################################
 ############# Settings #################
 ########################################
