@@ -4,12 +4,17 @@
 ############## Packages ################
 ########################################
 
+# Remove AODP's Layers Manager.  Layers Manager will now work as a system app
+LAYERS_MANAGER := \
+	vendor/slim/prebuilt/common/etc/Layers.apk:system/app/Layers/Layers.apk
+
+PRODUCT_COPY_FILES := $(filter-out $(LAYERS_MANAGER),$(PRODUCT_COPY_FILES))
+
 # Add wanted packages
 PRODUCT_PACKAGES += \
 		FDroid \
 		Matlog \
 		Snap \
-		LayersManager \
 		LockClock \
 		htop
 

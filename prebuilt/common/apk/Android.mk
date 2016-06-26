@@ -32,11 +32,12 @@ LOCAL_CERTIFICATE := platform
 LOCAL_MULTILIB := both
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := LayersManager
-LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_TAGS := optional
-LOCAL_CERTIFICATE := platform
-LOCAL_MULTILIB := both
-include $(BUILD_PREBUILT)
+#NOTE: Layers Manager will now work as a system app
+# include $(CLEAR_VARS)
+# LOCAL_MODULE := LayersManager
+# LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
+# LOCAL_MODULE_CLASS := APPS
+# LOCAL_MODULE_TAGS := optional
+# LOCAL_CERTIFICATE := platform
+# LOCAL_MULTILIB := both
+# include $(BUILD_PREBUILT)
