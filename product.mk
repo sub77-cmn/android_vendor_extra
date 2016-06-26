@@ -11,8 +11,7 @@ PRODUCT_PACKAGES += \
 		Snap \
 		LayersManager \
 		LockClock \
-		htop \
-		KernelAdiutor
+		htop
 
 ########################################
 ############# Settings #################
