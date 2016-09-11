@@ -6,6 +6,7 @@
 
 # Remove Chromium and DUCertified
 REMOVE_PACKAGES := CyanogenSetupWizard
+REMOVE_PACKAGES += TeleService Telecom TelephonyProvider
 
 PRODUCT_PACKAGES := $(filter-out $(REMOVE_PACKAGES),$(PRODUCT_PACKAGES))
 
