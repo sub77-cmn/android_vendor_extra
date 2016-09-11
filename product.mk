@@ -5,7 +5,7 @@
 ########################################
 
 # Remove Chromium and DUCertified
-REMOVE_PACKAGES := \
+REMOVE_PACKAGES := CyanogenSetupWizard
 
 PRODUCT_PACKAGES := $(filter-out $(REMOVE_PACKAGES),$(PRODUCT_PACKAGES))
 
